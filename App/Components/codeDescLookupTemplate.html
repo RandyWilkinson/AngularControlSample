@@ -1,0 +1,13 @@
+﻿
+<div class="form-inline">
+    <!--<label for="code">{{::label}}</label>-->
+    <div class="form-group">
+        <label for="code" >{{::vm.label}}</label>
+        <input class="form-control" id="code" type="text" ng-model="vm.code" placeholder="Code" />
+    </div>
+    <div class="form-group">
+        <label for="desc" class="sr-only">Description</label>
+        <input class="form-control" id="desc" type="text" ng-model="vm.desc" placeholder="Description" />
+    </div>
+    <button class="btn btn-link" ng-click="vm.searchClick()"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+</div>
